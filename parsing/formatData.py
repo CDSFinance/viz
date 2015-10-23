@@ -12,6 +12,9 @@ from boto.s3.connection import S3Connection
 # globals
 fileType = ".csv"
 
+AWS_ACCESS_KEY_ID = "AKIAIZQTUZW5HMCJGQRQ"
+AWS_SECRET_ACCESS_KEY = "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"
+
 def read_s3():
 	aws_connection = S3Connection(AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY)
 	bucket = aws_connection.get_bucket("cdsquantfinance")
